@@ -1,0 +1,215 @@
+/* Logo */
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}
+
+.logo img {
+    width: 200px;
+    height: 180px;
+}
+
+
+/* Background */
+
+.background1-image {
+    margin-left: 6rem;
+    margin-top: 10rem;
+    height: 75%;
+    width: 65%;
+}
+
+.background2-image {
+    margin-left: 8rem;
+    margin-top: 10rem;
+    height: 75%;
+    width: 80%;
+}
+
+.background1 h1 {
+    position: absolute;
+    left: 600px;
+    top: 55%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 54px;
+    color: #FF7506;
+}
+
+.background1 h2 {
+    position: absolute;
+    width: 400px;
+    height: 54px;
+    left: 600px;
+    top: 50%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 51px;
+    color: #FF7506;
+}
+
+
+/* Login*/
+
+.login {
+    background: #F7F7F7;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+}
+
+.login-inputbox {
+    margin-top: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+.login-input h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27px;
+    color: #37474F;
+}
+
+.login-username {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 10px 15px 10px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+}
+
+.login-password {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 10px 15px 10px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+}
+
+.login-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+    position: absolute;
+    background: #FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    width: 180px;
+    height: 50px;
+}
+
+
+/*ForgotPass*/
+
+.forgot-pass {
+    position: absolute;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E73F3F;
+}
+
+.reset-pass {
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    color: #282739;
+}
+
+.email-address {
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #37474F;
+}
+
+.input-email {
+    flex-direction: row;
+    padding: 15px 10px 15px 10px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+}
+
+.cancel-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+    position: absolute;
+    border: 1px solid #FF9138;
+    filter: drop-shadow(0px 0px 6px #E7E9F2);
+    border-radius: 8px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF9138;
+    margin-left: -6rem;
+    margin-right: 2rem;
+    width: 180px;
+    height: 50px;
+}
+
+.continue-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    position: absolute;
+    background: #FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 180px;
+    height: 50px;
+    margin-left: 6rem;
+}

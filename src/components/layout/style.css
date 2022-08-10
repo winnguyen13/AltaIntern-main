@@ -1,0 +1,126 @@
+/*Layout*/
+
+.containner {
+    background: #F7F7F7;
+    height: 100vh;
+    text-align: center;
+}
+
+
+/* NavBar */
+
+.siderWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.imgWrapper {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.img {
+    margin: auto;
+}
+
+.moreIcon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 10px;
+    transform: translateY(-50%);
+    transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.logoutBtn {
+    margin: 32px 12px;
+    background-color: #fff2e7;
+    color: #ff7506;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: auto;
+}
+
+.logoutBtn:hover {
+    background-color: #fff2e7;
+}
+
+
+/*Logout*/
+
+.ButtonLogout {
+    padding: 0 12px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    background-color: #fff2e7;
+    border: none;
+    font-size: 16px;
+}
+
+.ButtonLogout a {
+    color: #ff7506;
+    margin-left: 12px;
+}
+
+
+/*TopBar*/
+
+.headerWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatarContainer {
+    display: flex;
+    align-items: center;
+}
+
+.notificationButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    min-width: 32px;
+    margin-right: 24px;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.nameContainer {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hello {
+    font-size: 12px;
+    line-height: 18px;
+    color: #7e7d88;
+}
+
+.name {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #535261;
+}
