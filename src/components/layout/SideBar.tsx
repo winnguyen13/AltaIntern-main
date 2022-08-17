@@ -25,15 +25,15 @@ function getItem(
 }
 
 const items: MenuItem[] = [
-    getItem(<Link to='/dashboard'>Dashboard</Link>, '/admin/dashboard', <AppstoreOutlined />),
+    getItem(<Link to='/admin/dashboard'>Dashboard</Link>, '/dashboard', <AppstoreOutlined />),
 
-    getItem(<Link to='/devices'>Thiết bị</Link>, '/admin/devices', <DesktopOutlined />),
+    getItem(<Link to='/admin/devices'>Thiết bị</Link>, '/devices', <DesktopOutlined />),
 
-    getItem(<Link to='/admin/service'>Dịch vụ</Link>, '/admin/service', <WechatOutlined />),
+    getItem(<Link to='/admin/service'>Dịch vụ</Link>, '/service', <WechatOutlined />),
 
-    getItem(<Link to='/admin/givenumber'>Cấp số</Link>, '/admin/givenumber', <FontAwesomeIcon icon={faLayerGroup} />),
+    getItem(<Link to='/admin/givenumber'>Cấp số</Link>, '/givenumber', <FontAwesomeIcon icon={faLayerGroup} />),
 
-    getItem(<Link to='/admin/report'>Báo cáo</Link>, '/admin/report', <FontAwesomeIcon icon={faChartLine} />),
+    getItem(<Link to='/admin/report'>Báo cáo</Link>, '/report', <FontAwesomeIcon icon={faChartLine} />),
 
     getItem('Cài đặt hệ thống', 'sub6', <SettingOutlined />,
         <MoreOutlined style={{
@@ -44,9 +44,9 @@ const items: MenuItem[] = [
         }}
         />,
         [
-            getItem(<Link to='/admin/role'>Quản lý vai trò</Link>, '/admin/role'),
-            getItem(<Link to='/admin/account'>Quản lý tài khoản</Link>, '/admin/account'),
-            getItem(<Link to='/admin/dairy'>Nhật ký người dùng</Link>, '/admin/dairy')
+            getItem(<Link to='/setting/role'>Quản lý vai trò</Link>, '/setting/role'),
+            getItem(<Link to='/setting/account'>Quản lý tài khoản</Link>, '/setting/account'),
+            getItem(<Link to='/setting/dairy'>Nhật ký người dùng</Link>, '/setting/dairy')
         ]),
 ];
 
@@ -54,7 +54,7 @@ const onClick: MenuProps['onClick'] = e => {
     console.log('click', e);
 };
 
-const MenuLeft: React.FC = () => {
+const SideBar: React.FC = () => {
 
     return (
         <div>
@@ -63,4 +63,4 @@ const MenuLeft: React.FC = () => {
     )
 }
 
-export default MenuLeft
+export default SideBar

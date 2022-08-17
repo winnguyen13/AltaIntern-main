@@ -1,40 +1,74 @@
-import { Card, Form, Input, Row, Col } from "antd";
-import React from "react";
+import React from 'react';
+import { Input, Form, Image, Button } from 'antd'
+import { inputStyle, itemStyle, labelStyle } from './Style';
+import { CameraOutlined } from '@ant-design/icons';
+import { useAppSelector } from '../../../store';
+// import { userSelector } from '../../features/SystemSetting/Account/userSlice';
+var image = require('../../assets/HKicon.png')
+type Props = {}
+const Info: React.FC = (props: Props) => {
+    const [form] = Form.useForm();
+    // const { userLogin } = useAppSelector(userSelector)
+    return (
+        <Form
+            layout='inline'
+            form={form}
+            className='site-layout-background'
+            style={{
+                padding: 24,
+                minHeight: 360,
+                borderRadius: 20,
+            }}
+        >
+            <Form>
+                <Form.Item>
+                    <Image
+                        style={{ borderRadius: '100%', marginTop: '5%', position: 'absolute' }}
+                        src={image}
+                        width={248}
+                        height={248}
+                        preview={false}
+                    />
+                    <Button icon={<CameraOutlined style={{ color: '#ffffff' }} />} style={{
+                        backgroundColor: '#FF7506',
+                        border: '2px solid #FFFFFF',
+                        borderRadius: '100%',
+                        position: 'absolute',
+                        margin: '85% -30% 0',
+                        height: 45,
+                        width: 45
+                    }}></Button>
+                </Form.Item>
+                <Form.Item style={{ marginTop: '5%' }}>
+                    <label style={labelStyle}> {'Le Thi Thu Ha'}</label>
+                </Form.Item>
+            </Form>
 
-const Info = () => {
-  return (
-    <div style={{ padding: "80px 104px 0 24px" }}>
-      <Card bordered={false}>
-        <Form layout="vertical">
-          <Row gutter={24}>
-            <Col flex="434px"></Col>
-            <Col flex="auto">
-              <Form.Item label="Tên người dùng">
-                <Input disabled value={'Lê Quỳnh Ái Vân'} />
-              </Form.Item>
-              <Form.Item label="Số điện thoại">
-                <Input disabled value={'0767375921'} />
-              </Form.Item>
-              <Form.Item label="Email:">
-                <Input disabled value={'admin01@gmail.com'} />
-              </Form.Item>
-            </Col>
-            <Col flex="auto">
-              <Form.Item label="Tên đăng nhập">
-                <Input disabled value={'lequynhaivan01'} />
-              </Form.Item>
-              <Form.Item label="Mật Khẩu">
-                <Input disabled value={'123456789'} />
-              </Form.Item>
-              <Form.Item label="Vai trò:">
-                <Input disabled value={'Kế toán'} />
-              </Form.Item>
-            </Col>
-          </Row>
+            <Form layout='vertical'>
+                <Form.Item style={itemStyle} label='Tên người dùng'>
+                    <Input name='name' size='large' disabled={true} placeholder={'Le Thi Thu Ha'} style={inputStyle} />
+                </Form.Item>
+                <Form.Item style={itemStyle} label='Số điện thoại'>
+                    <Input name='name' size='large' disabled={true} placeholder={'0481040149241'} style={inputStyle} />
+                </Form.Item>
+                <Form.Item style={itemStyle} label='Email'>
+                    <Input name='name' size='large' disabled={true} placeholder={'ad@.com'} style={inputStyle} />
+                </Form.Item>
+            </Form>
+            <Form layout='vertical'>
+                <Form.Item style={itemStyle} label='Tên đăng nhập'>
+                    <Input name='name' size='large' disabled={true} placeholder={'hale0123'} style={inputStyle} />
+                </Form.Item>
+                <Form.Item style={itemStyle} label='Mật khẩu'>
+                    <Input name='name' size='large' disabled={true} placeholder={'123456789'} style={inputStyle} />
+                </Form.Item>
+                <Form.Item style={itemStyle} label='Vai trò'>
+                    <Input name='name' size='large' disabled={true} placeholder={'Ke toan'} style={inputStyle} />
+                </Form.Item>
+            </Form>
+
         </Form>
-      </Card>
-    </div>    
-  );
-};
+    )
+}
 
-export default Info;
+export default Info
